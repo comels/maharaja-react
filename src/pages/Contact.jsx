@@ -7,7 +7,6 @@ const Contact = () => {
   return (
     <div className="bg-stone-100">
       <Nav2 />
-      <div className="relative isolate">
         <div className="mx-auto px-10 max-w-7xl grid grid-cols-1 lg:grid-cols-2 items-center">
           <div className="relative px-6 pb-20 pt-14 sm:pt-22">
             <div className="mx-auto max-w-xl lg:max-w-md">
@@ -62,7 +61,6 @@ const Contact = () => {
           </div>
             <img className="rounded-lg" src="plat-1.jpeg" alt="" />
 
-        </div>
       </div>
       <Footer />
     </div>

@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
+import Contact2 from "./pages/Contact2";
 import NotFound from "./pages/NotFound";
 import Plats from "./pages/Plats";
 import Entrees from "./pages/Entrees";
@@ -17,7 +18,7 @@ const App = () => {
         <Route path="/entrees" element={<Entrees />} />
         <Route path="/formules" element={<Formules />} />
         <Route path="/desserts" element={<Desserts />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/contact" element={<Contact2 />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
