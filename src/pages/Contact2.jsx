@@ -60,7 +60,7 @@ const Home = () => {
           </div>
         </div>
         <img
-          className="mx-10 object-contain rounded-lg"
+          className="mx-10 object-contain rounded-lg max-w-lg max-h-full"
           src="plat-1.jpeg"
           alt=""
         />
