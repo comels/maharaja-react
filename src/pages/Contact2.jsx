@@ -8,7 +8,7 @@ const Home = () => {
       <Nav2 />
 
       <div className="grid justify-items-center mx-10 mb-20 items-center grid-cols-1 lg:grid-cols-2">
-        <div className="px-10 py-24">
+        <div className="md:px-10 md:py-24 py-10">
           <div className="mx-auto max-w-xl">
             <p className="text-2xl mt-4 font-bold text-orange-600">
               Nous contacter
@@ -23,7 +23,7 @@ const Home = () => {
               ce formulaire et nous vous répondrons rapidement. Nous sommes
               impatients de vous accueillir chez nous.
             </p>
-            <dl className="mt-10 space-y-4 text-base leading-7 text-gray-600">
+            {/* <dl className="mt-10 space-y-4 text-base leading-7 text-gray-600">
               <div className="flex gap-x-4">
                 <dt className="flex-none">
                   <PhoneIcon
@@ -34,7 +34,7 @@ const Home = () => {
                 <dd>
                   <a
                     className="hover:text-gray-900 font-light"
-                    href="tel:+336 66 67 96 88"
+                    href="tel:01 42 94 96 72"
                   >
                     01 42 94 96 72
                   </a>
@@ -56,7 +56,7 @@ const Home = () => {
                   </a>
                 </dd>
               </div>
-            </dl>
+            </dl> */}
           </div>
         </div>
         <img

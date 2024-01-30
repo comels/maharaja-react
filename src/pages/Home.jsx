@@ -8,7 +8,7 @@ const Home = () => {
       <Nav2 />
 
       <div className="grid justify-items-center mx-10 mb-20 items-center grid-cols-1 lg:grid-cols-2">
-        <div className="px-10 py-24">
+        <div className="md:px-10 md:py-24 py-10">
           <div className="mx-auto max-w-xl">
             <p className="text-2xl mt-4 font-bold text-orange-600">
               Spécialitées Indiennes et Sri Lankaises

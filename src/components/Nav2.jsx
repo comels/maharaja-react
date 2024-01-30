@@ -59,13 +59,13 @@ const Navigation = () => {
 
           <NavLink
             to="/"
-            className="text-normal font-light leading-6 text-gray-900"
+            className="text-normal font-light leading-6 text-gray-900 hover:font-normal"
           >
             accueil
           </NavLink>
 
           <Popover className="relative">
-            <Popover.Button className="flex items-center gap-x-1 text-normal font-light leading-6 text-gray-900">
+            <Popover.Button className="flex items-center gap-x-1 text-normal font-light leading-6 text-gray-900 hover:font-normal">
               menus
               <ChevronDownIcon
                 className="h-5 w-5 flex-none text-orange-600"
@@ -97,12 +97,12 @@ const Navigation = () => {
           </Popover>
           <NavLink
             to="/contact"
-            className="text-normal font-light leading-6 text-gray-900"
+            className="text-normal font-light leading-6 text-gray-900 hover:font-normal"
           >
             contact
           </NavLink>
           <a
-            className="text-normal font-light leading-6 text-gray-900"
+            className="text-normal font-light leading-6 text-gray-900 hover:font-normal"
             href="https://deliveroo.fr/en/menu/paris/place-de-clichy/le-maharaja?day=today&time=1230"
             target="_blank"
             rel="noopener noreferrer"
