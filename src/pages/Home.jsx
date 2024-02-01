@@ -1,11 +1,11 @@
 import React from "react";
-import Nav2 from "../components/Nav2";
+import Nav from "../components/Nav";
 import Footer from "../components/Footer";
 
 const Home = () => {
   return (
     <div className="bg-stone-100">
-      <Nav2 />
+      <Nav />
       <div className="relative">
         <img
           src="tajmahal.jpeg"

@@ -1,5 +1,5 @@
 import React from "react";
-import Nav2 from "../components/Nav2";
+import Nav from "../components/Nav";
 import TemplateFormule from "../components/TemplateFormule";
 import { formules } from "../data/formules";
 import Footer from "../components/Footer";
@@ -7,7 +7,7 @@ import Footer from "../components/Footer";
 const Formules = () => {
   return (
     <div className="bg-stone-100">
-      <Nav2 />
+      <Nav />
       <div className="py-20">
         <div className="mx-10">
           <h2 className="text-3xl text-center font-extrabold text-pink-600 tracking-tight">

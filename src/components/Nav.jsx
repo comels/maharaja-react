@@ -1,130 +1,211 @@
-import { Disclosure } from "@headlessui/react";
+import { Fragment, useState } from "react";
+import { Dialog, Disclosure, Popover, Transition } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import { NavLink } from "react-router-dom";
 
-const Nav = () => {
-  const baseLinkClass =
-    "tracking-wider block px-3 py-2 text-normal text-gray-800 hover:font-medium";
-  const activeLinkClass = "font-medium";
-  const inactiveLinkClass = "font-light";
+const company = [
+  { name: "Entrées", href: "/entrees" },
+  { name: "Plats", href: "/plats" },
+  { name: "Desserts", href: "/desserts" },
+  { name: "Formules", href: "/formules" },
+];
+
+function classNames(...classes) {
+  return classes.filter(Boolean).join(" ");
+}
+
+const Navigation = () => {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <Disclosure as="nav" className="bg-white py-3">
-      {({ open }) => (
-        <>
-          <div className="mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex h-16 items-center justify-between">
-              <div className="flex items-center">
-                <div className="flex-shrink-0">
-                  <h1 className="font-extrabold text-4xl mr-5 text-gray-700">
-                    Le Maharaja
-                  </h1>
-                  {/* <img className="h-8 w-auto" src="/icon.png" alt="Logo" /> */}
-                </div>
-                <div className="hidden sm:ml-6 sm:block">
-                  <div className="flex space-x-4">
-                    <NavLink
-                      to="/"
-                      className={({ isActive }) =>
-                        `${baseLinkClass} ${
-                          isActive ? activeLinkClass : inactiveLinkClass
-                        }`
-                      }
-                    >
-                      accueil
-                    </NavLink>
-                    <NavLink
-                      to="/menu"
-                      className={({ isActive }) =>
-                        `${baseLinkClass} ${
-                          isActive ? activeLinkClass : inactiveLinkClass
-                        }`
-                      }
-                    >
-                      menu
-                    </NavLink>
-                    <NavLink
-                      to="/contact"
-                      className={({ isActive }) =>
-                        `${baseLinkClass} ${
-                          isActive ? activeLinkClass : inactiveLinkClass
-                        }`
-                      }
-                    >
-                      contact
-                    </NavLink>
-                  </div>
-                </div>
-              </div>
-              <div className="hidden sm:flex sm:items-center sm:space-x-12">
-                <a
-                  href="https://www.linkedin.com/in/comels/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-stone-700 hover:text-stone-500 text-2xl"
+    <header className="bg-white">
+      <nav
+        className="mx-auto flex max-w-8xl items-center justify-between p-6 lg:px-8"
+        aria-label="Global"
+      >
+        {/* Logo */}
+        <div className="flex lg:flex-1">
+          <NavLink to="/" className="-m-1.5 p-1.5 focus:outline-none">
+            <img className="h-12 sm:h-16" src="logo.png" alt="" />
+          </NavLink>
+        </div>
+        {/* Logo menu burger pour mobile */}
+        <div className="flex md:hidden">
+          <button
+            type="button"
+            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+            onClick={() => setMobileMenuOpen(true)}
+          >
+            <span className="sr-only">Open main menu</span>
+            <Bars3Icon className="h-6 w-6" aria-hidden="true" />
+          </button>
+        </div>
+        {/* Menu principal */}
+        <Popover.Group className="hidden md:flex md:gap-x-12">
+          <Popover className="relative">
+            <Transition
+              as={Fragment}
+              enter="transition ease-out duration-200"
+              enterFrom="opacity-0 translate-y-1"
+              enterTo="opacity-100 translate-y-0"
+              leave="transition ease-in duration-150"
+              leaveFrom="opacity-100 translate-y-0"
+              leaveTo="opacity-0 translate-y-1"
+            ></Transition>
+          </Popover>
+          <NavLink
+            to="/"
+            className="text-normal font-light leading-6 text-gray-900  hover:text-pink-600 hover:font-normal"
+          >
+            accueil
+          </NavLink>
+
+          <Popover className="relative">
+            <Popover.Button className="flex items-center gap-x-1 text-normal font-light leading-6 text-gray-900 hover:text-pink-600 hover:font-normal">
+              menus
+              <ChevronDownIcon
+                className="h-5 w-5 flex-none text-pink-600"
+                aria-hidden="true"
+              />
+            </Popover.Button>
+
+            <Transition
+              as={Fragment}
+              enter="transition ease-out duration-200"
+              enterFrom="opacity-0 translate-y-1"
+              enterTo="opacity-100 translate-y-0"
+              leave="transition ease-in duration-150"
+              leaveFrom="opacity-100 translate-y-0"
+              leaveTo="opacity-0 translate-y-1"
+            >
+              <Popover.Panel className="absolute -left-8 top-full z-10 mt-3 w-56 rounded-xl bg-white p-2 shadow-lg ring-1 ring-gray-900/5">
+                {company.map((item) => (
+                  <NavLink
+                    key={item.name}
+                    to={item.href}
+                    className="block rounded-lg px-3 py-2 text-sm font-light leading-6 text-gray-900 hover:bg-gray-50"
+                  >
+                    {item.name}
+                  </NavLink>
+                ))}
+              </Popover.Panel>
+            </Transition>
+          </Popover>
+          <NavLink
+            to="/contact"
+            className="text-normal font-light leading-6 text-gray-900 hover:text-pink-600 hover:font-normal"
+          >
+            contact
+          </NavLink>
+          <a
+            className="text-normal font-light leading-6 text-gray-900 hover:text-pink-600 hover:font-normal"
+            href="https://deliveroo.fr/en/menu/paris/place-de-clichy/le-maharaja?day=today&time=1230"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            deliveroo
+          </a>
+        </Popover.Group>
+      </nav>
+      <Dialog
+        as="div"
+        className="lg:hidden"
+        open={mobileMenuOpen}
+        onClose={setMobileMenuOpen}
+      >
+        <div className="fixed inset-0 z-10" />
+        <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+          <div className="flex items-center justify-between">
+            <NavLink to="/" className="-m-1.5 p-1.5 focus:outline-none">
+              <img className="h-12 sm:h-16" src="logo.png" alt="" />
+            </NavLink>
+            <button
+              type="button"
+              className="-m-2.5 rounded-md p-2.5 text-gray-700"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              <span className="sr-only">Close menu</span>
+              <XMarkIcon className="h-6 w-6" aria-hidden="true" />
+            </button>
+          </div>
+          <div className="mt-6 flow-root">
+            <div className="-my-6 divide-y divide-gray-500/10">
+              <div className="space-y-2 py-6">
+                <NavLink
+                  to="/"
+                  className="-mx-3 block rounded-lg px-3 py-2 font-light leading-7 text-gray-900 hover:bg-gray-50"
                 >
-                  <i className="fab fa-linkedin-in"></i>
-                </a>
-                <a
-                  href="https://www.github.com/comels/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-stone-700 hover:text-stone-500 text-2xl"
-                >
-                  <i className="fab fa-github"></i>
-                </a>
-              </div>
-              <div className="-mr-2 flex sm:hidden">
-                <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none">
-                  <span className="sr-only">Ouvrir le menu principal</span>
-                  {open ? (
-                    <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
-                  ) : (
-                    <Bars3Icon className="block h-6 w-6" aria-hidden="true" />
+                  Accueil
+                </NavLink>
+
+                <Disclosure as="div" className="-mx-3">
+                  {({ open }) => (
+                    <>
+                      <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-light leading-7 text-gray-900 hover:bg-gray-50">
+                        Menus
+                        <ChevronDownIcon
+                          className={classNames(
+                            open ? "rotate-180" : "",
+                            "h-5 w-5 text-pink-600 flex-none"
+                          )}
+                          aria-hidden="true"
+                        />
+                      </Disclosure.Button>
+                      <Disclosure.Panel className="mt-2 space-y-2">
+                        {company.map((item) => (
+                          <Disclosure.Button
+                            key={item.name}
+                            as="a"
+                            href={item.href}
+                            className="block rounded-lg py-2 pl-6 pr-3 text-sm font-light leading-7 text-gray-900 hover:bg-gray-50"
+                          >
+                            {item.name}
+                          </Disclosure.Button>
+                        ))}
+                      </Disclosure.Panel>
+                    </>
                   )}
-                </Disclosure.Button>
+                </Disclosure>
+                <NavLink
+                  to="/contact"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-light leading-7 text-gray-900 hover:bg-gray-50"
+                >
+                  Contact
+                </NavLink>
+                <a
+                  href="https://deliveroo.fr/en/menu/paris/place-de-clichy/le-maharaja?day=today&time=1230"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-light leading-7 text-gray-900 hover:bg-gray-50"
+                >
+                  deliveroo
+                </a>
+              </div>
+              <div className="py-6">
+                <div className="flex gap-6 justify-center">
+                  <a
+                    href="https://www.tripadvisor.fr/Restaurant_Review-g187147-d793280-Reviews-Le_Maharaja-Paris_Ile_de_France.html"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img className="h-10" src="tripadvisor.png" alt="" />
+                  </a>
+                  <a
+                    href="https://deliveroo.fr/en/menu/paris/place-de-clichy/le-maharaja?day=today&time=1230"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img className="h-10" src="deliveroo.png" alt="" />
+                  </a>
+                </div>
               </div>
             </div>
           </div>
-
-          <Disclosure.Panel className="sm:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1">
-              <NavLink
-                to="/"
-                className={({ isActive }) =>
-                  `${baseLinkClass} ${
-                    isActive ? activeLinkClass : inactiveLinkClass
-                  }`
-                }
-              >
-                accueil
-              </NavLink>
-              <NavLink
-                to="/menu"
-                className={({ isActive }) =>
-                  `${baseLinkClass} ${
-                    isActive ? activeLinkClass : inactiveLinkClass
-                  }`
-                }
-              >
-                menu
-              </NavLink>
-              <NavLink
-                to="/contact"
-                className={({ isActive }) =>
-                  `${baseLinkClass} ${
-                    isActive ? activeLinkClass : inactiveLinkClass
-                  }`
-                }
-              >
-                contact
-              </NavLink>
-            </div>
-          </Disclosure.Panel>
-        </>
-      )}
-    </Disclosure>
+        </Dialog.Panel>
+      </Dialog>
+    </header>
   );
 };
 
-export default Nav;
+export default Navigation;

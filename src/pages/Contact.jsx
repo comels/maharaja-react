@@ -1,40 +1,46 @@
 import { EnvelopeIcon, PhoneIcon } from "@heroicons/react/24/outline";
-import Nav2 from "../components/Nav2";
+import Nav from "../components/Nav";
 import Footer from "../components/Footer";
 
-const Contact = () => {
+const Home = () => {
   return (
     <div className="bg-stone-100">
-      <Nav2 />
-      <div className="mx-auto px-10 max-w-7xl grid grid-cols-1 lg:grid-cols-2 items-center">
-        <div className="relative px-6 pb-20 pt-14 sm:pt-22">
-          <div className="mx-auto max-w-xl lg:max-w-md">
-            <h2 className="text-3xl font-bold tracking-tight text-pink-600">
-              Nous contacter
-            </h2>
-            <p className="mt-6 text-base font-light leading-8 text-gray-800">
-              Si vous avez des questions, souhaitez effectuer une réservation,
-              ou planifier un événement tel qu'un anniversaire ou une réunion
-              privée, n'hésitez pas à nous contacter. Nous sommes à votre
-              disposition pour vous aider à organiser vos moments importants
-              avec une touche de cuisine indienne authentique. Pour toute
-              demande vous pouvez nous appeler, nous envoyer un email ou remplir
-              ce formulaire et nous vous répondrons rapidement. Nous sommes
-              impatients de vous accueillir chez nous.
+      <Nav />
+
+      <div className="grid justify-items-center mx-10 mb-10 items-center grid-cols-1 lg:grid-cols-2">
+        <div className="md:px-10 md:py-24 py-10">
+          <div className="mx-auto max-w-xl">
+            <p className="font-extrabold text-2xl sm:text-3xl mt-4 text-pink-600 tracking-tight">
+              Contact
             </p>
-            <dl className="mt-10 space-y-4 text-base leading-7 text-gray-600">
+            <div>
+              <p className="mt-6 text-lg font-light text-justify leading-9 text-gray-800">
+                Si vous avez des questions, souhaitez effectuer une réservation,
+                ou planifier un événement tel qu'un anniversaire ou une réunion
+                privée, n'hésitez pas à nous contacter, ou à nous rendre visite
+                au{" "}
+                <a
+                  href="https://www.google.fr/maps/place/Le+Maharaja+2001/@48.8862032,2.3216354,19.53z/data=!4m15!1m8!3m7!1s0x47e66fb28f550d8f:0xa109917431093c8b!2s48+Rue+la+Condamine,+75017+Paris!3b1!8m2!3d48.8862492!4d2.3220552!16s%2Fg%2F11c11mnk5y!3m5!1s0x47e66fb2858c4229:0xdacc90bb73a204f!8m2!3d48.8862369!4d2.3220858!16s%2Fg%2F12hm6xf6y?entry=ttu"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span className="font-semibold text-pink-600">
+                    48 rue la Condamine, Paris 17e
+                  </span>
+                </a>{" "}
+                !
+              </p>
+            </div>
+            <dl className="mt-10 space-y-4 text-lg leading-7 text-gray-800">
               <div className="flex gap-x-4">
                 <dt className="flex-none">
                   <PhoneIcon
-                    className="h-7 w-6 text-gray-400"
+                    className="h-7 w-6 text-pink-600"
                     aria-hidden="true"
                   />
                 </dt>
                 <dd>
-                  <a
-                    className="hover:text-gray-900 font-light"
-                    href="tel:+336 66 67 96 88"
-                  >
+                  <a className="text-gray-800 font-light" href="tel:0142949672">
                     01 42 94 96 72
                   </a>
                 </dd>
@@ -42,14 +48,14 @@ const Contact = () => {
               <div className="flex gap-x-4">
                 <dt className="flex-none">
                   <EnvelopeIcon
-                    className="h-7 w-6 text-gray-400"
+                    className="h-7 w-6 text-pink-600"
                     aria-hidden="true"
                   />
                 </dt>
                 <dd>
                   <a
-                    className="hover:text-gray-900 font-light"
-                    href="mailto:come.l.s@hotmail.fr"
+                    className="text-gray-800 font-light"
+                    href="mailto:maharaja.restaurant.paris@gmail.com"
                   >
                     maharaja.restaurant.paris@gmail.com
                   </a>
@@ -58,11 +64,15 @@ const Contact = () => {
             </dl>
           </div>
         </div>
-        <img className="rounded-lg" src="plat-1.jpeg" alt="" />
+        <img
+          className="mx-10 object-contain rounded-lg max-h-96 max-w-screen"
+          src="plat-1.jpeg"
+          alt=""
+        />
       </div>
       <Footer />
     </div>
   );
 };
 
-export default Contact;
+export default Home;
