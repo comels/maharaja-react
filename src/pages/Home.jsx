@@ -13,7 +13,7 @@ const Home = () => {
           className="w-full max-h-[550px] object-cover"
         />
         <div className="sm:hidden text-base text-pink-600 border-2 border-pink-600 rounded-lg px-4 py-2 bg-stone-100 absolute font-medium -tracking-tight left-5 top-5">
-          <a href="tel:0142949672">Appeler</a>
+          <a href="tel:+33142949672">Appeler</a>
         </div>
         <div className="absolute text-5xl sm:text-7xl md:text-8xl lg:text-9xl max-w-md font-extrabold leading-tight top-3 sm:top-10 right-3 sm:right-10 lg:right-32 text-stone-100 opacity-80">
           <p className="tracking-tight">வரவேற்பு</p>

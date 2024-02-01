@@ -26,11 +26,8 @@ const Navigation = () => {
       >
         {/* Logo */}
         <div className="flex lg:flex-1">
-          <NavLink to="/" className="-m-1.5 p-1.5">
+          <NavLink to="/" className="-m-1.5 p-1.5 focus:outline-none">
             <img className="h-12 sm:h-16" src="logo.png" alt="" />
-            {/* <h1 className="font-extrabold text-3xl sm:text-4xl sm:ml-10 text-pink-600 tracking-tight">
-              {!mobileMenuOpen && "Le Maharaja"}
-            </h1> */}
           </NavLink>
         </div>
         {/* Logo menu burger pour mobile */}
@@ -120,8 +117,8 @@ const Navigation = () => {
         <div className="fixed inset-0 z-10" />
         <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
-            <NavLink to="/" className="-m-1.5 p-1.5">
-            <img className="h-12 sm:h-16" src="logo.png" alt="" />
+            <NavLink to="/" className="-m-1.5 p-1.5 focus:outline-none">
+              <img className="h-12 sm:h-16" src="logo.png" alt="" />
             </NavLink>
             <button
               type="button"
