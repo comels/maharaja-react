@@ -25,7 +25,7 @@ const Home = () => {
                   rel="noopener noreferrer"
                 >
                   <span className="font-semibold text-pink-600">
-                    48 rue la Condamine, 75017 Paris
+                    48 rue la Condamine, Paris 17e
                   </span>
                 </a>{" "}
                 !

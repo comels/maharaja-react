@@ -3,17 +3,15 @@ const Footer = () => {
     <footer className="bg-white py-10">
       <div className="grid sm:grid-cols-3 gap-10 items-center">
         <div className="flex flex-col mx-auto">
-          <h2 className="font-bold text-lg text-pink-600 tracking-tight">
-            Le Maharaja
-          </h2>
-          <a
+        <img className="h-10 object-contain mb-2" src="logo.png" alt="" />
+          <div className="text-center"><a
             href="https://www.google.fr/maps/place/Le+Maharaja+2001/@48.8862032,2.3216354,19.53z/data=!4m15!1m8!3m7!1s0x47e66fb28f550d8f:0xa109917431093c8b!2s48+Rue+la+Condamine,+75017+Paris!3b1!8m2!3d48.8862492!4d2.3220552!16s%2Fg%2F11c11mnk5y!3m5!1s0x47e66fb2858c4229:0xdacc90bb73a204f!8m2!3d48.8862369!4d2.3220858!16s%2Fg%2F12hm6xf6y?entry=ttu"
             target="_blank"
             rel="noopener noreferrer"
           >
             <p className="text-base text-gray-800">48 rue la Condamine</p>
           
-          <p className="text-base mb-3 text-gray-800">Paris 75017</p></a>
+          <p className="text-base mb-3 text-gray-800">Paris 75017</p></a></div>
           <div className="flex items-center">
             <img className="h-4" src="metro-13.png" alt="" />
             <p className="text-base ml-1 text-gray-800">La Fourche</p>
