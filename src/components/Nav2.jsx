@@ -27,7 +27,7 @@ const Navigation = () => {
         {/* Logo */}
         <div className="flex lg:flex-1">
           <NavLink to="/" className="-m-1.5 p-1.5">
-            <h1 className="font-extrabold text-4xl ml-10 text-pink-600 tracking-tight">
+            <h1 className="font-extrabold text-3xl sm:text-4xl sm:ml-10 text-pink-600 tracking-tight">
               {!mobileMenuOpen && "Le Maharaja"}
             </h1>
           </NavLink>

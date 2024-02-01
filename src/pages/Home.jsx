@@ -16,8 +16,8 @@ const Home = () => {
           <p className="tracking-tight">வணக்கம்</p>
         </div>
       </div>
-      <div className="max-w-5xl mx-auto mb-10 p-10 text-justify">
-        <p className="text-3xl mt-4 font-bold text-pink-600 tracking-tight">
+      <div className="max-w-5xl mx-auto mb-10 p-10">
+        <p className="text-2xl sm:text-3xl mt-4 font-bold text-pink-600 tracking-tight">
           Spécialitées Indiennes et Sri Lankaises
         </p>
         <p className="mt-6 text-lg font-light text-justify leading-9 text-gray-800">

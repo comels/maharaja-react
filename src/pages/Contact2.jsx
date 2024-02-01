@@ -7,11 +7,11 @@ const Home = () => {
     <div className="bg-stone-100">
       <Nav2 />
 
-      <div className="grid justify-items-center mx-10 mb-20 items-center grid-cols-1 lg:grid-cols-2">
+      <div className="grid justify-items-center mx-10 mb-10 items-center grid-cols-1 lg:grid-cols-2">
         <div className="md:px-10 md:py-24 py-10">
           <div className="mx-auto max-w-xl">
-            <p className="text-4xl mt-4 font-bold text-pink-600 tracking-tight">
-              Nous contacter
+            <p className="font-extrabold text-2xl sm:text-3xl mt-4 text-pink-600 tracking-tight">
+              Contact
             </p>
             <div>
               <p className="mt-6 text-lg font-light text-justify leading-9 text-gray-800">
@@ -32,7 +32,7 @@ const Home = () => {
                 <dd>
                   <a
                     className="hover:text-gray-900 font-light"
-                    href="tel:01 42 94 96 72"
+                    href="tel:0142949672"
                   >
                     01 42 94 96 72
                   </a>
@@ -58,7 +58,7 @@ const Home = () => {
           </div>
         </div>
         <img
-          className="mx-10 object-contain rounded-lg max-w-lg max-h-full"
+          className="mx-10 object-contain rounded-lg max-h-96 max-w-screen"
           src="plat-1.jpeg"
           alt=""
         />
