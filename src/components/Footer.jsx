@@ -1,7 +1,7 @@
 const Footer = () => {
   // Composant Footer : affiche les informations de contact, les horaires et les liens vers les réseaux sociaux
   return (
-    <footer className="bg-white py-10">
+    <footer className="bg-white pt-10 pb-5">
       <div className="grid sm:grid-cols-3 gap-10 items-center">
         {/* Section du logo et adresse */}
         <div className="flex flex-col mx-auto">
@@ -16,9 +16,7 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <p className="text-base text-gray-800">
-                48 rue la Condamine
-              </p>
+              <p className="text-base text-gray-800">48 rue la Condamine</p>
               <p className="text-base mb-3 text-gray-800">Paris 75017</p>
             </a>
           </div>
@@ -61,6 +59,18 @@ const Footer = () => {
           </a>
         </div>
       </div>
+      <p className="text-center mt-16 font-extralight text-gray-800 text-xs">
+        Copyright © 2024 -{" "}
+        <a
+          href="https://www.linkedin.com/in/comels/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:font-light"
+        >
+          Côme Le Sauter
+        </a>{" "}
+        - développeur web
+      </p>
     </footer>
   );
 };

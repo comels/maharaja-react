@@ -130,7 +130,7 @@ const Navigation = () => {
             </button>
           </div>
           <div className="mt-6 flow-root">
-            <div className="-my-6 divide-y divide-gray-500/10">
+            <div className="-my-6 divide-y divide-pink-600/10">
               <div className="space-y-2 py-6">
                 <NavLink
                   to="/"
@@ -173,14 +173,7 @@ const Navigation = () => {
                 >
                   Contact
                 </NavLink>
-                <a
-                  href="https://deliveroo.fr/en/menu/paris/place-de-clichy/le-maharaja?day=today&time=1230"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-light leading-7 text-gray-900 hover:bg-gray-50"
-                >
-                  deliveroo
-                </a>
+                
               </div>
               <div className="py-6">
                 <div className="flex gap-6 justify-center">

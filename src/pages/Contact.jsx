@@ -14,7 +14,7 @@ const Home = () => {
               Contact
             </p>
             <div>
-              <p className="mt-6 text-lg font-light text-justify leading-9 text-gray-800">
+              <p className="mt-6 text-base sm:text-lg font-light text-justify leading-9 text-gray-800">
                 Si vous avez des questions, souhaitez effectuer une réservation,
                 ou planifier un événement tel qu'un anniversaire ou une réunion
                 privée, n'hésitez pas à nous contacter, ou à nous rendre visite
