@@ -27,9 +27,10 @@ const Navigation = () => {
         {/* Logo */}
         <div className="flex lg:flex-1">
           <NavLink to="/" className="-m-1.5 p-1.5">
-            <h1 className="font-extrabold text-3xl sm:text-4xl sm:ml-10 text-pink-600 tracking-tight">
+            <img className="h-12 sm:h-16" src="logo.png" alt="" />
+            {/* <h1 className="font-extrabold text-3xl sm:text-4xl sm:ml-10 text-pink-600 tracking-tight">
               {!mobileMenuOpen && "Le Maharaja"}
-            </h1>
+            </h1> */}
           </NavLink>
         </div>
         {/* Logo menu burger pour mobile */}
@@ -58,13 +59,13 @@ const Navigation = () => {
           </Popover>
           <NavLink
             to="/"
-            className="text-normal font-light leading-6 text-gray-900 hover:font-normal"
+            className="text-normal font-light leading-6 text-gray-900  hover:text-pink-600 hover:font-normal"
           >
             accueil
           </NavLink>
 
           <Popover className="relative">
-            <Popover.Button className="flex items-center gap-x-1 text-normal font-light leading-6 text-gray-900 hover:font-normal">
+            <Popover.Button className="flex items-center gap-x-1 text-normal font-light leading-6 text-gray-900 hover:text-pink-600 hover:font-normal">
               menus
               <ChevronDownIcon
                 className="h-5 w-5 flex-none text-pink-600"
@@ -96,12 +97,12 @@ const Navigation = () => {
           </Popover>
           <NavLink
             to="/contact"
-            className="text-normal font-light leading-6 text-gray-900 hover:font-normal"
+            className="text-normal font-light leading-6 text-gray-900 hover:text-pink-600 hover:font-normal"
           >
             contact
           </NavLink>
           <a
-            className="text-normal font-light leading-6 text-gray-900 hover:font-normal"
+            className="text-normal font-light leading-6 text-gray-900 hover:text-pink-600 hover:font-normal"
             href="https://deliveroo.fr/en/menu/paris/place-de-clichy/le-maharaja?day=today&time=1230"
             target="_blank"
             rel="noopener noreferrer"

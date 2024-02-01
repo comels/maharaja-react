@@ -13,7 +13,7 @@ const Home = () => {
           class="w-full max-h-[550px] object-cover"
         />
         <div class="absolute text-5xl sm:text-7xl md:text-8xl lg:text-9xl max-w-md font-extrabold leading-tight top-3 sm:top-10 right-3 sm:right-10 lg:right-32 text-stone-100 opacity-80">
-          <p className="tracking-tight">வணக்கம்</p>
+          <p className="tracking-tight">வரவேற்பு</p>
         </div>
       </div>
       <div className="max-w-5xl mx-auto mb-10 p-10">
