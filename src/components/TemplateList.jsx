@@ -1,7 +1,7 @@
 const TemplateList = ({ products, name }) => {
   return (
     <div>
-      <h1 className="mb-4 text-2xl text-orange-600 text-center font-bold">
+      <h1 className="mb-4 text-2xl tracking-tight text-pink-600 text-center font-bold">
         {name}
       </h1>
       <div className="px-10 overflow-y-auto custom-scrollbar h-[500px] max-h-[500px] bg-white rounded-xl">

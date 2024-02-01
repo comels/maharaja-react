@@ -10,7 +10,7 @@ const Formules = () => {
       <Nav2 />
       <div className="py-20">
         <div className="mx-10">
-          <h2 className="text-3xl text-center font-extrabold text-orange-600">
+          <h2 className="text-3xl text-center font-extrabold text-pink-600 tracking-tight">
             Nos Formules
           </h2>
           <p className="mt-2 text-base text-center font-light text-gray-800">

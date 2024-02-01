@@ -6,30 +6,34 @@ const Home = () => {
   return (
     <div className="bg-stone-100">
       <Nav2 />
-
-      <div className="grid justify-items-center mx-10 mb-20 items-center grid-cols-1 lg:grid-cols-2">
-        <div className="md:px-10 md:py-24 py-10">
-          <div className="mx-auto max-w-xl">
-            <p className="text-2xl mt-4 font-bold text-orange-600">
-              Spécialitées Indiennes et Sri Lankaises
-            </p>
-            <p className="mt-6 text-base font-light text-justify leading-8 text-gray-800">
-              Au Maharaja, notre passion est de vous emmener dans un voyage
-              culinaire inoubliable, où les saveurs de l'Inde et du Sri Lanka se
-              rencontrent. Chaque plat est une célébration des arômes exotiques,
-              avec des ingrédients comme les poivrons épicés, le safran parfumé
-              et les masalas authentiques, tous soigneusement choisis et
-              importés des diverses régions du sous-continent. Découvrez un
-              éventail de spécialités traditionnelles, du poulet tikka masala à
-              l'irrésistible biriyani d'agneau, sans oublier le délicieux daal
-              maakhni. Accompagnez-les de nan croustillant ou de riz parfumé
-              pour une expérience gustative complète. Avec la qualité
-              exceptionnelle de nos ingrédients et le savoir-faire de notre
-              chef, nous vous promettons un moment de pur plaisir culinaire.
-            </p>
-          </div>
+      <div className="relative">
+        <img
+          src="tajmahal.jpeg"
+          alt="Taj Mahal"
+          class="w-full max-h-[550px] object-cover"
+        />
+        <div class="absolute text-5xl sm:text-7xl md:text-8xl lg:text-9xl max-w-md font-extrabold leading-tight top-3 sm:top-10 right-3 sm:right-10 lg:right-32 text-stone-100 opacity-80">
+          <p className="tracking-tight">வணக்கம்</p>
         </div>
-        <img className="mx-10 object-contain rounded-lg" src="plat-2.avif" alt="" />
+      </div>
+      <div className="max-w-5xl mx-auto mb-10 p-10 text-justify">
+        <p className="text-3xl mt-4 font-bold text-pink-600 tracking-tight">
+          Spécialitées Indiennes et Sri Lankaises
+        </p>
+        <p className="mt-6 text-lg font-light text-justify leading-9 text-gray-800">
+          Au Maharaja, notre passion est de vous emmener dans un voyage
+          culinaire inoubliable, où les saveurs de l'Inde et du Sri Lanka se
+          rencontrent. Chaque plat est une célébration des arômes exotiques,
+          avec des ingrédients comme les poivrons épicés, le safran parfumé et
+          les masalas authentiques, tous soigneusement choisis et importés des
+          diverses régions du sous-continent. Découvrez un éventail de
+          spécialités traditionnelles, du poulet tikka masala à l'irrésistible
+          biriyani d'agneau, sans oublier le délicieux daal maakhni.
+          Accompagnez-les de nan croustillant ou de riz parfumé pour une
+          expérience gustative complète. Avec la qualité exceptionnelle de nos
+          ingrédients et le savoir-faire de notre chef, nous vous promettons un
+          moment de pur plaisir culinaire.
+        </p>
       </div>
       <Footer />
     </div>

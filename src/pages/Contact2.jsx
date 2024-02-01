@@ -10,24 +10,22 @@ const Home = () => {
       <div className="grid justify-items-center mx-10 mb-20 items-center grid-cols-1 lg:grid-cols-2">
         <div className="md:px-10 md:py-24 py-10">
           <div className="mx-auto max-w-xl">
-            <p className="text-2xl mt-4 font-bold text-orange-600">
+            <p className="text-4xl mt-4 font-bold text-pink-600 tracking-tight">
               Nous contacter
             </p>
-            <p className="mt-6 text-base font-light text-justify leading-8 text-gray-800">
-              Si vous avez des questions, souhaitez effectuer une réservation,
-              ou planifier un événement tel qu'un anniversaire ou une réunion
-              privée, n'hésitez pas à nous contacter. Nous sommes à votre
-              disposition pour vous aider à organiser vos moments importants
-              avec une touche de cuisine indienne authentique. Pour toute
-              demande vous pouvez nous appeler, nous envoyer un email ou remplir
-              ce formulaire et nous vous répondrons rapidement. Nous sommes
-              impatients de vous accueillir chez nous.
-            </p>
-            {/* <dl className="mt-10 space-y-4 text-base leading-7 text-gray-600">
+            <div>
+              <p className="mt-6 text-lg font-light text-justify leading-9 text-gray-800">
+                Si vous avez des questions, souhaitez effectuer une réservation,
+                ou planifier un événement tel qu'un anniversaire ou une réunion
+                privée, n'hésitez pas à nous contacter, ou à nous rendre visite
+                au <strong>48 rue la Condamine, 75017 Paris</strong> !
+              </p>
+            </div>
+            <dl className="mt-10 space-y-4 text-lg leading-7 text-gray-600">
               <div className="flex gap-x-4">
                 <dt className="flex-none">
                   <PhoneIcon
-                    className="h-7 w-6 text-gray-400"
+                    className="h-7 w-6 text-pink-600"
                     aria-hidden="true"
                   />
                 </dt>
@@ -43,7 +41,7 @@ const Home = () => {
               <div className="flex gap-x-4">
                 <dt className="flex-none">
                   <EnvelopeIcon
-                    className="h-7 w-6 text-gray-400"
+                    className="h-7 w-6 text-pink-600"
                     aria-hidden="true"
                   />
                 </dt>
@@ -56,7 +54,7 @@ const Home = () => {
                   </a>
                 </dd>
               </div>
-            </dl> */}
+            </dl>
           </div>
         </div>
         <img

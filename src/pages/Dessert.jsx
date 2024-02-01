@@ -10,8 +10,8 @@ const Desserts = () => {
       <Nav2 />
       <div className="flex justify-center py-14">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mx-10">
-          <TemplateList products={desserts} name="Les Desserts" />
-          <TemplateList products={lassis} name="Les Lassis" />
+          <TemplateList products={desserts} name="Desserts" />
+          <TemplateList products={lassis} name="Lassis" />
         </div>
       </div>
       <Footer />

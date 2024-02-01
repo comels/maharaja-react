@@ -19,7 +19,7 @@ const Navigation = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header>
+    <header className="bg-white">
       <nav
         className="mx-auto flex max-w-8xl items-center justify-between p-6 lg:px-8"
         aria-label="Global"
@@ -27,7 +27,7 @@ const Navigation = () => {
         {/* Logo */}
         <div className="flex lg:flex-1">
           <NavLink to="/" className="-m-1.5 p-1.5">
-            <h1 className="font-extrabold text-4xl ml-10 text-orange-600">
+            <h1 className="font-extrabold text-4xl ml-10 text-pink-600 tracking-tight">
               {!mobileMenuOpen && "Le Maharaja"}
             </h1>
           </NavLink>
@@ -56,7 +56,6 @@ const Navigation = () => {
               leaveTo="opacity-0 translate-y-1"
             ></Transition>
           </Popover>
-
           <NavLink
             to="/"
             className="text-normal font-light leading-6 text-gray-900 hover:font-normal"
@@ -68,7 +67,7 @@ const Navigation = () => {
             <Popover.Button className="flex items-center gap-x-1 text-normal font-light leading-6 text-gray-900 hover:font-normal">
               menus
               <ChevronDownIcon
-                className="h-5 w-5 flex-none text-orange-600"
+                className="h-5 w-5 flex-none text-pink-600"
                 aria-hidden="true"
               />
             </Popover.Button>
@@ -121,7 +120,7 @@ const Navigation = () => {
         <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
             <NavLink to="/" className="-m-1.5 p-1.5">
-              <h1 className="font-extrabold text-3xl mr-5 text-orange-600">
+              <h1 className="font-extrabold text-3xl mr-5 text-pink-600">
                 Le Maharaja
               </h1>
             </NavLink>
@@ -152,7 +151,7 @@ const Navigation = () => {
                         <ChevronDownIcon
                           className={classNames(
                             open ? "rotate-180" : "",
-                            "h-5 w-5 text-orange-600 flex-none"
+                            "h-5 w-5 text-pink-600 flex-none"
                           )}
                           aria-hidden="true"
                         />

@@ -3,6 +3,9 @@ const Footer = () => {
     <footer className="bg-white py-10">
       <div className="grid sm:grid-cols-3 gap-10 items-center">
         <div className="flex flex-col mx-auto">
+          <h2 className="font-bold text-lg text-pink-600 tracking-tight">
+            Le Maharaja
+          </h2>
           <p className="text-base text-gray-800">48 rue la Condamine</p>
           <p className="text-base mb-3 text-gray-800">Paris 75017</p>
           <div className="flex items-center">
