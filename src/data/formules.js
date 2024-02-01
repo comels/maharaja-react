@@ -6,7 +6,6 @@ export const formules = [
     entrees: [],
     plats: ["Poulet au Curry", "Légumes Mix"],
     desserts: ["Suji Halwa"],
-    date: "Du Lundi au Vendredi",
     category: "LE MIDI UNIQUEMENT",
   },
   {
@@ -16,7 +15,6 @@ export const formules = [
     entrees: ["Poulet Tikka", "Samosa légumes", "Mix pakora", "Nan Nature"],
     plats: ["Poulet au Curry", "Curry d'aubergines", "Palak Paneer"],
     desserts: ["Suji Halwa", "Gulab Jamun"],
-    date: "Du Lundi au Vendredi",
     category: "LE MIDI UNIQUEMENT",
   },
   {
@@ -31,7 +29,6 @@ export const formules = [
     ],
     plats: ["Aubergine Curry", "Dall Curry", "Aubergine Burtha"],
     desserts: ["Glaces ( Vanille , Mangue )", "Gulab Jamun"],
-    date: "Du Lundi au Vendredi",
     category: "LE MIDI UNIQUEMENT",
   },
   {
@@ -41,7 +38,6 @@ export const formules = [
     entrees: ["Allo Pakora", "Raita", " Samosa Viande", "Nan Nature"],
     plats: ["Poulet Curry", "Poulet Tikka Masala", "Palak Paneer"],
     desserts: ["Glaces ( Vanille , Mangue )", "Gulab Jamun", "Suji Halwa"],
-    date: "Du Lundi au Vendredi",
     category: "LE SOIR UNIQUEMENT",
   },
   {
@@ -54,7 +50,6 @@ export const formules = [
       "Gulfi ( Mangue , Pistache )",
       "Sorbets  ( Vanille , Chocolat, Fraise , Citron Vert )",
     ],
-    date: "Du Lundi au Vendredi",
     category: "LE SOIR UNIQUEMENT",
   },
 ];

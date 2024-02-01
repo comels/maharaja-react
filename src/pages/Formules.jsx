@@ -14,7 +14,7 @@ const Formules = () => {
             Nos Formules
           </h2>
           <p className="mt-2 text-base text-center font-light text-gray-800">
-            Nos formules sont valables uniquement sur place ou à emporter.
+           Uniquement valable du Lundi au Vendredi
           </p>
           <div className="mx-auto mt-10 grid lg:grid-cols-2 xl:grid-cols-3 gap-10">
             {formules.map((formule, index) => (

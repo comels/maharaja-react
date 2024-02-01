@@ -3,12 +3,9 @@ import React from "react";
 const TemplateFormule = ({ formule }) => {
   return (
     <article className="flex flex-col bg-white p-10 rounded-xl">
-      <div className="flex items-center gap-x-4 text-sm justify-between">
-        <p className="text-gray-800 font-light">{formule.date}</p>
-        <p className="font-medium text-end text-pink-600">{formule.category}</p>
-      </div>
+      <p className="text-sm font-medium text-pink-600">{formule.category}</p>
       <div className="group relative">
-        <h3 className="mt-10 mb-2 text-2xl font-bold leading-6 text-gray-800">
+        <h3 className="mt-5 mb-2 text-2xl font-bold leading-6 text-gray-800">
           {formule.title}
         </h3>
         <div className="flex justify-between">

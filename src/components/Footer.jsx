@@ -6,7 +6,7 @@ const Footer = () => {
         {/* Section du logo et adresse */}
         <div className="flex flex-col mx-auto">
           <img
-            className="h-10 object-contain mb-2"
+            className="h-10 object-contain mb-4"
             src="logo.png"
             alt="Logo de l'entreprise"
           />
@@ -59,13 +59,13 @@ const Footer = () => {
           </a>
         </div>
       </div>
-      <p className="text-center mt-16 font-extralight text-gray-800 text-xs">
+      <p className="text-center mt-16 font-light text-gray-800 text-xs">
         Copyright © 2024 -{" "}
         <a
           href="https://www.linkedin.com/in/comels/"
           target="_blank"
           rel="noopener noreferrer"
-          className="hover:font-light"
+          className="hover:font-normal"
         >
           Côme Le Sauter
         </a>{" "}

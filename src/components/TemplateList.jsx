@@ -4,7 +4,7 @@ const TemplateList = ({ products, name }) => {
       <h1 className="mb-4 text-2xl tracking-tight text-pink-600 text-center font-bold">
         {name}
       </h1>
-      <div className="px-10 overflow-y-auto custom-scrollbar h-[500px] max-h-[500px] bg-white rounded-xl">
+      <div className="px-10 overflow-y-auto custom-scrollbar h-[600px] max-h-[600px] bg-white rounded-xl">
         {products.map(({ name, description, price }, index) => (
           <div key={index} className="mt-3">
             <dl>
