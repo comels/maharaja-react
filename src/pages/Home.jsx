@@ -12,6 +12,12 @@ const Home = () => {
           alt="Taj Mahal"
           class="w-full max-h-[550px] object-cover"
         />
+        <div
+          href="tel:0142949672"
+          className="sm:hidden text-lg text-pink-600 border-4 border-pink-600 rounded-lg px-6 py-3 bg-stone-100 absolute font-bold -tracking-tight left-5 top-5"
+        >
+          Réserver
+        </div>
         <div class="absolute text-5xl sm:text-7xl md:text-8xl lg:text-9xl max-w-md font-extrabold leading-tight top-3 sm:top-10 right-3 sm:right-10 lg:right-32 text-stone-100 opacity-80">
           <p className="tracking-tight">வரவேற்பு</p>
         </div>
