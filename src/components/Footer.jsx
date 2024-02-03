@@ -51,7 +51,7 @@ const Footer = () => {
             <img className="h-12" src="tripadvisor.png" alt="TripAdvisor" />
           </a>
           <a
-            href="https://www.youtube.com/watch?v=J1todp-4YOI&ab_channel=%C3%89coleduWeb"
+            href="https://deliveroo.fr/en/menu/paris/place-de-clichy/le-maharaja?day=today&time=1230"
             target="_blank"
             rel="noopener noreferrer"
           >
