@@ -12,7 +12,7 @@ const Home = () => {
           alt="Taj Mahal"
           className="w-full max-h-[550px] object-cover"
         />
-        <div className="sm:hidden text-base text-pink-600 border-2 border-pink-600 rounded-lg px-4 py-2 bg-stone-100 absolute font-medium -tracking-tight left-5 top-5">
+        <div className="sm:hidden text-base text-red-700 border-2 border-red-700 rounded-lg px-4 py-2 bg-stone-100 absolute font-medium -tracking-tight left-5 top-5">
           <a href="tel:+33142949672">Appeler</a>
         </div>
         <div className="absolute text-6xl sm:text-7xl md:text-8xl lg:text-9xl max-w-md font-extrabold leading-tight top-3 sm:top-10 right-3 sm:right-10 lg:right-28 xl:right-44 text-stone-100 opacity-80">
@@ -20,7 +20,7 @@ const Home = () => {
         </div>
       </div>
       <div className="max-w-5xl mx-auto mb-10 p-10">
-        <p className="text-2xl sm:text-3xl mt-4 font-bold text-pink-600 tracking-tight">
+        <p className="text-2xl sm:text-3xl mt-4 font-bold text-red-700 tracking-tight">
           Spécialitées Indiennes et Sri Lankaises
         </p>
         <p className="mt-6 text-base sm:text-lg font-light text-justify leading-9 text-gray-800">

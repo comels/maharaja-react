@@ -27,7 +27,11 @@ const Navigation = () => {
         {/* Logo */}
         <div className="flex lg:flex-1">
           <NavLink to="/" className="-m-1.5 p-1.5 focus:outline-none">
-            <img className="h-12 sm:h-16" src="logo.png" alt="" />
+            <img
+              className="h-8 sm:p-1 sm:h-12"
+              src="logo-maharaja.png"
+              alt=""
+            />
           </NavLink>
         </div>
         {/* Logo menu burger pour mobile */}
@@ -56,16 +60,16 @@ const Navigation = () => {
           </Popover>
           <NavLink
             to="/"
-            className="text-normal font-light leading-6 text-gray-900  hover:text-pink-600 hover:font-normal"
+            className="text-normal font-light leading-6 text-gray-900  hover:text-red-700 hover:font-normal"
           >
             accueil
           </NavLink>
 
           <Popover className="relative">
-            <Popover.Button className="flex items-center gap-x-1 text-normal font-light leading-6 text-gray-900 hover:text-pink-600 hover:font-normal">
+            <Popover.Button className="flex items-center gap-x-1 text-normal font-light leading-6 text-gray-900 hover:text-red-700 hover:font-normal">
               menus
               <ChevronDownIcon
-                className="h-5 w-5 flex-none text-pink-600"
+                className="h-5 w-5 flex-none text-red-700"
                 aria-hidden="true"
               />
             </Popover.Button>
@@ -94,12 +98,12 @@ const Navigation = () => {
           </Popover>
           <NavLink
             to="/contact"
-            className="text-normal font-light leading-6 text-gray-900 hover:text-pink-600 hover:font-normal"
+            className="text-normal font-light leading-6 text-gray-900 hover:text-red-700 hover:font-normal"
           >
             contact
           </NavLink>
           <a
-            className="text-normal font-light leading-6 text-gray-900 hover:text-pink-600 hover:font-normal"
+            className="text-normal font-light leading-6 text-gray-900 hover:text-red-700 hover:font-normal"
             href="https://deliveroo.fr/en/menu/paris/place-de-clichy/le-maharaja?day=today&time=1230"
             target="_blank"
             rel="noopener noreferrer"
@@ -130,7 +134,7 @@ const Navigation = () => {
             </button>
           </div>
           <div className="mt-6 flow-root">
-            <div className="-my-6 divide-y divide-pink-600/10">
+            <div className="-my-6 divide-y divide-red-700/10">
               <div className="space-y-2 py-6">
                 <NavLink
                   to="/"
@@ -147,7 +151,7 @@ const Navigation = () => {
                         <ChevronDownIcon
                           className={classNames(
                             open ? "rotate-180" : "",
-                            "h-5 w-5 text-pink-600 flex-none"
+                            "h-5 w-5 text-red-700 flex-none"
                           )}
                           aria-hidden="true"
                         />

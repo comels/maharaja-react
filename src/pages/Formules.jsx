@@ -10,11 +10,11 @@ const Formules = () => {
       <Nav />
       <div className="py-20">
         <div className="mx-10">
-          <h2 className="text-3xl text-center font-extrabold text-pink-600 tracking-tight">
+          <h2 className="text-3xl text-center font-extrabold text-red-700 tracking-tight">
             Nos Formules
           </h2>
           <p className="mt-2 text-base text-center font-light text-gray-800">
-           Uniquement valable du Lundi au Vendredi
+            Uniquement valable du Lundi au Vendredi
           </p>
           <div className="mx-auto mt-10 grid lg:grid-cols-2 xl:grid-cols-3 gap-10">
             {formules.map((formule, index) => (

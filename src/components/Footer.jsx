@@ -6,8 +6,8 @@ const Footer = () => {
         {/* Section du logo et adresse */}
         <div className="flex flex-col mx-auto">
           <img
-            className="h-10 object-contain mb-4"
-            src="logo.png"
+            className="h-5 object-contain mb-4"
+            src="logo-maharaja.png"
             alt="Logo de l'entreprise"
           />
           <div className="text-center">
@@ -36,7 +36,7 @@ const Footer = () => {
           <p className="text-base mb-1 text-gray-800">12h00 - 14h00</p>
           <p className="text-base text-gray-800">19h00 - 23h00</p>
           <a href="tel:+33142949672">
-            <h2 className="font-medium text-pink-600 text-lg mt-5 ">
+            <h2 className="font-medium text-red-700 text-lg mt-5 ">
               01 42 63 83 29
             </h2>
           </a>

@@ -10,7 +10,7 @@ const Home = () => {
       <div className="grid justify-items-center mx-10 mb-10 items-center grid-cols-1 lg:grid-cols-2">
         <div className="md:px-10 md:py-24 py-10">
           <div className="mx-auto max-w-xl">
-            <p className="font-extrabold text-2xl sm:text-3xl mt-4 text-pink-600 tracking-tight">
+            <p className="font-extrabold text-2xl sm:text-3xl mt-4 text-red-700 tracking-tight">
               Contact
             </p>
             <div>
@@ -24,7 +24,7 @@ const Home = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <span className="font-semibold text-pink-600">
+                  <span className="font-semibold text-red-700">
                     48 rue la Condamine, Paris 17e.
                   </span>
                 </a>
@@ -34,7 +34,7 @@ const Home = () => {
               <div className="flex gap-x-4">
                 <dt className="flex-none">
                   <PhoneIcon
-                    className="h-7 w-6 text-pink-600"
+                    className="h-7 w-6 text-red-700"
                     aria-hidden="true"
                   />
                 </dt>
@@ -47,7 +47,7 @@ const Home = () => {
               <div className="flex gap-x-4">
                 <dt className="flex-none">
                   <EnvelopeIcon
-                    className="h-7 w-6 text-pink-600"
+                    className="h-7 w-6 text-red-700"
                     aria-hidden="true"
                   />
                 </dt>
@@ -64,8 +64,8 @@ const Home = () => {
           </div>
         </div>
         <img
-          className="mx-10 object-contain rounded-lg max-h-96 max-w-screen"
-          src="plat-1.jpeg"
+          className="mx-10 object-cover rounded-lg max-h-96"
+          src="guirlande.JPG"
           alt=""
         />
       </div>
